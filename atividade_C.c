@@ -8,15 +8,15 @@ int main ()
 
 	char Disciplina[128];
 	printf("Qual disciplina?\n");
-	scanf("%s", Disciplina);
+	scanf("[^\n]", Disciplina);
 
 	char Turma[32];
 	printf("Turma?\n");
-	scanf("%s", Turma);
+	scanf("[^\n]", Turma);
 
 	char aluno[500];
 	printf("Aluno?\n");
-	scanf("%s", aluno);
+	scanf("[^\n]", aluno);
 
 	printf("Matricula: %d\n",matricula);
 
@@ -32,4 +32,5 @@ int main ()
 	return 0;
 
 ;}
+
 
