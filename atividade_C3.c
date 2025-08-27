@@ -31,9 +31,12 @@ float m= cm/100.0;
 
 imc= kg/m*m;
 
-printf("imc=%f",imc);
+printf("imc=%f",&imc);
 
+if imc < 18,5
+    printf("Abaixo do peso normal"
 // Outra forma: 
 //imc=(gramas/1000.0)/(cm/100.0)*(cm/100.0)
 //imc=(1.0 *gramas)/(cm*cm)*10.0
+
 }
