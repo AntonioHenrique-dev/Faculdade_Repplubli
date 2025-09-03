@@ -3,47 +3,44 @@
 
 int main () {
 
-    int continuar=1;  
+    char op;  
     char nome [128];
     int gramas; 
     int cm;
     float imc;
     int idade;
 
-    do{
         printf("\n\tIMC\n\n");
-                printf("n - inserir nome\n");
-                printf("i - inserir idade\n");
-                printf("m - inserir massa corporal\n");
-                printf("a - inserir altura\n");
-                printf("e - exibir informacoes\n");
-                printf("0 - fechar programa\n");
+        printf("n - inserir nome\n");
+        printf("i - inserir idade\n");
+        printf("m - inserir massa corporal\n");
+        printf("a - inserir altura\n");
+        printf("e - exibir informacoes\n");
+            printf("0 - fechar programa\n");
 
-                scanf("%d", &continuar);
-                system("cls || clear");
-        switch (continuar)
+        switch (op)
         {
             case 'n':
-            puts("Nome: ");
+            prinf("Nome: ");
             fflush(stdin);
             fgets(nome, sizeof(nome),stdin); 
             //sizeof(nome) é recomendado
             break;
 
             case 'i':
-            puts("Idade: ");
+            printf("Idade: ");
             fflush(stdin);
             scanf("%d",&idade);
             break;
 
             case 'm':
-            puts("Massa[g]: ");
+            printf("Massa[g]: ");
             fflush(stdin);
             scanf("%d",&gramas);
             break;
 
             case 'a':
-            puts("Altura[cm]: ");
+            printf("Altura[cm]: ");
             fflush(stdin);
             scanf("%d",&cm);
             break;
@@ -93,8 +90,7 @@ int main () {
         
             default:
                 printf("Digite uma opcao valida\n");
-        }
-    } while (continuar);    
+        } while (continuar);    
     // Outra forma: 
     //imc=(gramas/1000.0)/(cm/100.0)*(cm/100.0)
     //imc=(1.0 *gramas)/(cm*cm)*10.0
